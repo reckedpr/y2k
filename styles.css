@@ -1,0 +1,104 @@
+:root {
+    --ansi-0: #313f46;
+    --ansi-1: #c30033;
+    --ansi-2: #4caf50;
+    --ansi-3: #f0a900;
+    --ansi-4: #0961c3;
+    --ansi-5: #8a0c90;
+    --ansi-6: #3f7d87;
+    --ansi-7: #b1c0c5;
+    --ansi-8: #4a595f;
+    --ansi-9: #ff5591;
+    --ansi-10: #8bcc90;
+    --ansi-11: #ffeb43;
+    --ansi-12: #49a3ff;
+    --ansi-13: #ca4cca;
+    --ansi-14: #457cb9;
+    --ansi-15: #f1fbff;
+    --background-color: #313f46;
+    --bold-color: #f1fbff;
+    --foreground-color: #f1fbff;
+}
+
+body {
+    background-color: #313f46;
+    font-family: consolas;
+}
+
+p {
+    color: #f1fbff;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, div, span {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+}
+
+.centerMain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    
+}
+
+.mainBox {
+    width: 650px;
+    height: 400px;
+    
+    
+    padding-left: 15px;
+    padding-top: 15px;
+
+    font-size: 24px;
+
+    border: 2px #f1fbff solid;
+}
+
+.leftBox {
+    width: 100px;
+    height: 400px;
+    
+    
+    padding-left: 15px;
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.console {
+    font-size: 24px;
+
+    position: absolute;
+    top: 0;
+    left: 105px;
+    transform: translateY(-40px);
+    padding: 10px;
+
+}
+
+
+.userhost {
+    color: var(--ansi-3);
+}
+
+.directory {
+    color: var(--ansi-14);
+}
+
+
+
+

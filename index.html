@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <div class="centerMain">
+        
+        <div class="leftBox">
+            <img src="88x31/linux-p.gif" height="31" width="88">
+            <img src="88x31/gethtmlnow.gif" height="31" width="88">
+            <a href=https://archlinux.org><img src="./88x31/archlinux.gif" height="31" width="88"></a>
+            <a href=https://www.mozilla.org/en-US/firefox/download/thanks><img src="./88x31/chrome.gif" height="31" width="88"></a>
+        </div>
+        
+        <div class="mainBox">
+            <div class="console">
+                
+            </div>
+            <div class="terminal">
+                <p><span class="userhost">user@reckedpr.xyz</span>:<span class="directory">~</span><span id="command">w</span></p>
+            </div>
+            <script>
+                // Function to detect browser from the user agent
+                function getBrowser() {
+                    const userAgent = navigator.userAgent;
+            
+                    if (userAgent.includes("Firefox")) {
+                        return "firefox";
+                    } else if (userAgent.includes("Edg")) {
+                        return "edge";
+                    } else if (userAgent.includes("Chrome")) {
+                        return "chrome";
+                    } else if (userAgent.includes("Safari")) {
+                        return "safari";
+                    } else {
+                        return "browser"; // Fallback
+                    }
+                }
+            
+                // Set the command dynamically
+                const browser = getBrowser();
+                const filePath = "/home/index.html"; // Example path
+                document.getElementById("command").textContent = `${browser} ${filePath}`;
+            </script>
+        
+
+    </div>
+</body>
+</html>
