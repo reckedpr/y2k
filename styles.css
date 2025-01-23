@@ -20,9 +20,11 @@
     --foreground-color: #f1fbff;
 }
 
+
+
 body {
     background-color: #313f46;
-    font-family: consolas;
+    font-family: "Roboto Mono", sans-serif;
 }
 
 p {
